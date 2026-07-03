@@ -20,6 +20,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -28,9 +29,9 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <p class="eyebrow">Chartered Accountancy &mdash; Pursuing</p>
+            <p class="eyebrow eyebrow-greeting"><span id="typedGreeting"></span><span class="cursor">|</span></p>
             <h1>Dipika Singh</h1>
-            <p class="subtitle">B.Com (Accountancy) &nbsp;&bull;&nbsp; CA Aspirant</p>
+            <p class="subtitle">Bachelor of Commerce</p>
             <p class="hero-text">
                 Finance professional with 3.5+ years of experience in accounting,
                 audit, financial reporting and compliance &mdash; now building expertise
@@ -57,20 +58,23 @@
 
     <!-- About -->
     <section id="about">
-        <p class="section-eyebrow">01 &mdash; Profile</p>
+        <p class="section-eyebrow">Profile</p>
         <h2>About Me</h2>
         <p class="section-lead">
             I am a finance professional with 3.5 years of experience in accounting,
-            audit, financial reporting and compliance. Currently, I am pursuing
-            Chartered Accountancy while continuously building expertise in
-            Financial Planning &amp; Analysis (FP&amp;A), Financial Modelling and
-            Corporate Finance.
+            audit, financial reporting and compliance. Currently, I am a CA Aspirant
+            with the Institute of Chartered Accountants of India, while continuously
+            building expertise in Financial Planning &amp; Analysis (FP&amp;A),
+            Financial Modelling and Corporate Finance.
+        </p>
+        <p class="beyond-ledger">
+            <i class="fa-solid fa-chess-knight"></i> Beyond the ledger: an on-and-off chess player &mdash; 737 Elo on Duolingo Chess.
         </p>
     </section>
 
     <!-- Education -->
     <section id="education">
-        <p class="section-eyebrow">02 &mdash; Education</p>
+        <p class="section-eyebrow">Education</p>
         <h2>Education</h2>
 
         <div class="ledger">
@@ -110,8 +114,16 @@
 
     <!-- Experience -->
     <section id="experience">
-        <p class="section-eyebrow">03 &mdash; Experience</p>
+        <p class="section-eyebrow">Experience</p>
         <h2>Experience</h2>
+
+        <div class="card">
+            <div class="card-top">
+                <h3>Freelance Accounting &amp; Finance Consultant</h3>
+                <span class="card-years">Oct 2024 &ndash; Present</span>
+            </div>
+            <p class="card-org">Self-Employed</p>
+        </div>
 
         <div class="card">
             <div class="card-top">
@@ -130,59 +142,45 @@
         </div>
     </section>
 
+    <!-- Skills -->
+    <section id="skills">
+        <p class="section-eyebrow">Skills</p>
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <span class="skill-pill">Advanced Excel</span>
+            <span class="skill-pill">Power BI</span>
+            <span class="skill-pill">Tally</span>
+            <span class="skill-pill">SAP</span>
+        </div>
+    </section>
+
     <!-- Certifications -->
     <section id="certifications">
-        <p class="section-eyebrow">04 &mdash; Certifications</p>
+        <p class="section-eyebrow">Certifications</p>
         <h2>Certifications</h2>
 
-        <h3 class="cert-group-title">ICAI Certifications</h3>
         <div class="cert-grid">
             <div class="cert-plate">
                 <div class="cert-plate-image">
-                    <img src="assets/certificates/icitss-it.jpg" alt="ICITSS Information Technology certificate"
-                         onerror="this.closest('.cert-plate-image').classList.add('cert-plate-image--empty'); this.remove();">
-                    <i class="fa-solid fa-certificate cert-fallback-icon"></i>
+                    <img src="assets/certificates/financial-modelling-camonk.jpg" alt="Financial Modeling and Valuation (FMVA) & Investment Banking Masterclass certificate, CA Monk">
                 </div>
-                <h4>ICITSS &mdash; Information Technology</h4>
-                <p>The Institute of Chartered Accountants of India</p>
+                <h4>Financial Modeling &amp; Valuation (FMVA) &mdash; Investment Banking Masterclass</h4>
+                <p>CA Monk &nbsp;&bull;&nbsp; Feb 2025</p>
             </div>
 
             <div class="cert-plate">
                 <div class="cert-plate-image">
-                    <img src="assets/certificates/icitss-orientation.jpg" alt="ICITSS Orientation Course certificate"
-                         onerror="this.closest('.cert-plate-image').classList.add('cert-plate-image--empty'); this.remove();">
-                    <i class="fa-solid fa-certificate cert-fallback-icon"></i>
+                    <img src="assets/certificates/boa-global-markets.jpg" alt="Global Markets Sales and Trading Analyst Job Simulation certificate, Bank of America via Forage">
                 </div>
-                <h4>ICITSS &mdash; Orientation Course</h4>
-                <p>The Institute of Chartered Accountants of India</p>
-            </div>
-        </div>
-
-        <h3 class="cert-group-title">Finance Certifications</h3>
-        <div class="cert-grid">
-            <div class="cert-plate">
-                <div class="cert-plate-image">
-                    <img src="assets/certificates/financial-modelling-camonk.jpg" alt="Financial Modelling and Valuation certificate"
-                         onerror="this.closest('.cert-plate-image').classList.add('cert-plate-image--empty'); this.remove();">
-                    <i class="fa-solid fa-certificate cert-fallback-icon"></i>
-                </div>
-                <h4>Financial Modelling &amp; Valuation</h4>
-                <p>CA Monk</p>
-            </div>
-
-            <div class="cert-plate">
-                <div class="cert-plate-image cert-plate-image--empty">
-                    <i class="fa-solid fa-chart-line cert-fallback-icon"></i>
-                </div>
-                <h4>Capital Markets &amp; Trading Analyst</h4>
-                <p>Bank of America</p>
+                <h4>Global Markets Sales &amp; Trading Analyst &mdash; Job Simulation</h4>
+                <p>Bank of America &nbsp;(via Forage) &nbsp;&bull;&nbsp; Apr 2025</p>
             </div>
         </div>
     </section>
 
     <!-- Contact -->
     <section id="contact">
-        <p class="section-eyebrow section-eyebrow-light">05 &mdash; Contact</p>
+        <p class="section-eyebrow section-eyebrow-light">Contact</p>
         <h2>Get In Touch</h2>
         <div class="contact-grid">
             <a href="mailto:iamsinghdipika@gmail.com" class="contact-item">
