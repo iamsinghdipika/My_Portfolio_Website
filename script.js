@@ -1,9 +1,38 @@
-// Subtle fade-up reveal for sections as they enter the viewport.
 document.addEventListener('DOMContentLoaded', () => {
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // --- Nav shadow on scroll ---
+    const nav = document.querySelector('nav');
+    const onScroll = () => {
+        if (window.scrollY > 12) nav.classList.add('scrolled');
+        else nav.classList.remove('scrolled');
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // --- Hero typing effect ---
+    const typedEl = document.getElementById('typedGreeting');
+    if (typedEl) {
+        const message = 'Hi, I am Dipika Singh';
+        if (prefersReducedMotion) {
+            typedEl.textContent = message;
+        } else {
+            let i = 0;
+            const type = () => {
+                if (i <= message.length) {
+                    typedEl.textContent = message.slice(0, i);
+                    i++;
+                    setTimeout(type, 55);
+                }
+            };
+            type();
+        }
+    }
+
     if (prefersReducedMotion) return;
 
-    const revealTargets = document.querySelectorAll('section, .cert-plate, .card, .ledger-row');
+    // --- Scroll reveal for content blocks ---
+    const revealTargets = document.querySelectorAll('section, .cert-plate, .card, .ledger-row, .skill-pill');
 
     revealTargets.forEach(el => {
         el.style.opacity = '0';
